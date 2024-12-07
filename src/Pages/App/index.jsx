@@ -5,18 +5,30 @@ import MyOrders from '../MyOrders'
 import NotFound from '../NotFound'
 import SingIn from '../SingIn'
 import './App.css'
+import {Routes, Route, BrowserRouter} from "react-router"
 
-function App() {
+
+const AppRoutes = () => {
+  return (
+    <>
+    <Routes>
+      <Route path="/" element={<Home />}/>
+      <Route path="/MyAccount" element= {<MyAccount />}/>,
+      <Route path="/MyOrder" element= {<MyOrder />}/>,
+      <Route path="/MyOrders" element= {<MyOrders />}/>,
+      <Route path="/NotFound" element= {<NotFound />}/>,
+      <Route path="/SingIn" element= {<SingIn />}/>,
+    </Routes>
+    </>
+  )
+}
+
+const App = () => {
 
   return (
-      <div className="bg-red-100">
-        <Home />
-        <MyAccount />
-        <MyOrder />
-        <MyOrders />
-        <NotFound />
-        <SingIn />
-      </div>
+        <BrowserRouter>
+          <AppRoutes />
+        </BrowserRouter>
   )
 }
 
