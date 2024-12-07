@@ -1,3 +1,4 @@
+import Navbar from '../../components/Navbar'
 import Home from '../Home'
 import MyAccount from '../MyAccount'
 import MyOrder from '../MyOrder'
@@ -13,11 +14,11 @@ const AppRoutes = () => {
     <>
     <Routes>
       <Route path="/" element={<Home />}/>
-      <Route path="/MyAccount" element= {<MyAccount />}/>,
-      <Route path="/MyOrder" element= {<MyOrder />}/>,
-      <Route path="/MyOrders" element= {<MyOrders />}/>,
-      <Route path="/NotFound" element= {<NotFound />}/>,
-      <Route path="/SingIn" element= {<SingIn />}/>,
+      <Route path="/my-account" element= {<MyAccount />}/>,
+      <Route path="/my-order" element= {<MyOrder />}/>,
+      <Route path="/my-orders" element= {<MyOrders />}/>,
+      <Route path="/sign-in" element= {<SingIn />}/>,
+      <Route path="/*" element= {<NotFound />}/>,
     </Routes>
     </>
   )
@@ -28,6 +29,7 @@ const App = () => {
   return (
         <BrowserRouter>
           <AppRoutes />
+          <Navbar />
         </BrowserRouter>
   )
 }
