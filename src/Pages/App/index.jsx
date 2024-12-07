@@ -4,7 +4,7 @@ import MyAccount from '../MyAccount'
 import MyOrder from '../MyOrder'
 import MyOrders from '../MyOrders'
 import NotFound from '../NotFound'
-import SingIn from '../SingIn'
+import SignIn from '../SignIn'
 import './App.css'
 import {Routes, Route, BrowserRouter} from "react-router"
 
@@ -17,7 +17,7 @@ const AppRoutes = () => {
       <Route path="/my-account" element= {<MyAccount />}/>,
       <Route path="/my-order" element= {<MyOrder />}/>,
       <Route path="/my-orders" element= {<MyOrders />}/>,
-      <Route path="/sign-in" element= {<SingIn />}/>,
+      <Route path="/sign-in" element= {<SignIn />}/>,
       <Route path="/*" element= {<NotFound />}/>,
     </Routes>
     </>

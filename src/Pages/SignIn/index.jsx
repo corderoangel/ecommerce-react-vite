@@ -1,11 +1,11 @@
 import Layout from '../../Components/Layout'
 
-function MyOrder() {
+function SignIn() {
   return (
     <Layout>
-      MyOrder
+      SignIn
     </Layout>
   )
 }
 
-export default MyOrder
+export default SignIn
