@@ -1,3 +1,4 @@
+import CheckoutSideMenu from '../../components/CheckoutSideMenu'
 import Navbar from '../../components/Navbar'
 import { ShoppingCartProvider } from '../../Context'
 import Home from '../Home'
@@ -32,6 +33,7 @@ const App = () => {
         <BrowserRouter>
           <AppRoutes />
           <Navbar />
+          <CheckoutSideMenu/>
         </BrowserRouter>
     </ShoppingCartProvider>
   )
