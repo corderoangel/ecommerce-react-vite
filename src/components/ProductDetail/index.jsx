@@ -12,7 +12,7 @@ const ProductDetail = () => {
       <div className='flex justify-between items-center p-6'>
         <h2 className='font-medium text-xl'>Detail</h2>
         <div>
-        <XMarkIcon className='h-6 w-6 text-black'></XMarkIcon>
+        <XMarkIcon className='h-6 w-6 text-black' onClick={context.closeProductDetail}></XMarkIcon>
         </div>
       </div>
       <figure className='px-6'>
