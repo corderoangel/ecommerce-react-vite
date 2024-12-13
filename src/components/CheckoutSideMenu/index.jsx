@@ -25,6 +25,7 @@ const CheckoutSideMenu = () => {
 
     context.setOrder([...context.order, orderToAdd]);
     context.setCartProducts([]);
+    context.setSearchByTitle(null);
   }
 
   return (
@@ -45,7 +46,7 @@ const CheckoutSideMenu = () => {
                 key={product.id}
                 id={product.id}
                 title={product.title}
-                imageUrl={product.image}
+                imageUrl={product.images}
                 price={product.price}
                 handleDelete={handleDelete}
                 />
